@@ -1,0 +1,113 @@
+/* akaya-kanadaka-regular - latin */
+@font-face {
+    font-family: 'Akaya Kanadaka';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/akaya-kanadaka-v16-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/akaya-kanadaka-v16-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    font-family: 'Akaya Kanadaka';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.main-header {
+    display: flex;
+    padding-block: 2rem;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+#description {
+    margin-block: 3rem;
+    font-style: italic;
+}
+
+#parameters-button {}
+
+.parameters {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-block-start: 1rem;
+    border: 1px solid grey;
+}
+
+.parameters fieldset {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 0.2rem;
+    border: 0;
+}
+
+.parameters input {
+    width: 8rem;
+    text-align: center;
+}
+
+#game-form {
+    margin-block: 2rem;
+    padding: 1rem 3rem;
+}
+
+#game-form input {
+    height: 5rem;
+    font-size: 4rem;
+    width: 14rem;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+    padding: 1rem 3rem;
+}
+
+.tips {
+    background-color: grey;
+}
+
+.success {
+    background-color: green;
+}
+
+.unsuccess {
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.main-footer {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

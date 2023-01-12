@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/helper.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="main-title">Guess The Number</h1>  
+        </div>      
+    </header>
+    <main>
+        <div class="container">
+            <p id="description">
+                This game is very simple. 
+                <br>
+                You have to find what number I guess.
+            </p>
+            <button id="parameters-button">Parameters</button> 
+            <button id="start">Start new game</button>
+    
+            <div class="parameters hide">
+                <fieldset>
+                    <label for="min_value">Minimum Value</label>
+                    <input type="number" name="min_value" id="min_value" min="1" max="100" value="1">
+                </fieldset>
+                <fieldset>
+                    <label for="max_value">Maximum Value</label>
+                    <input type="number" name="max_value" id="max_value" min="1" max="99999" value="100">
+                </fieldset>
+                <fieldset>
+                    <label for="max_try">Maximum Tries</label>
+                    <input type="number" name="max_try" id="max_try" min="1" max="25" value="10">
+                </fieldset>
+            </div>
+    
+            <form id="game-form">
+                <input type="number" name="number" id="number">
+                <button disabled>Guess</button>        
+                <div class="tries"></div>
+            </form>
+            <div class="result"></div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            2023 &copy; MaximeBranger
+        </div>
+    </footer>
+
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
